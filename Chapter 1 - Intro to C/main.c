@@ -3,17 +3,19 @@
 #include "task1.h"
 #include "task2.h"
 #include "task3.h"
+#include "prime-or-composite.h"
 
-#define MENU_OPTION_COUNT 3
+#define MENU_OPTION_COUNT 4
 
 int main() {
     int option = -1;
 
     // Menu option text
-    const char *optionPrompts[MENU_OPTION_COUNT] = {"Bob's Bricks", "Pathway 1 Practice - Q1", "Pathway 1 Practice - Q2"};
+    const char *optionPrompts[MENU_OPTION_COUNT] = {"Bob's Bricks", "Pathway 1 Practice - Q1",
+                                                    "Pathway 1 Practice - Q2", "Prime or Composite"};
 
     // Array of functions
-    const int (*functions[MENU_OPTION_COUNT])() = {task1, task2, task3};
+    const int (*functions[MENU_OPTION_COUNT])() = {task1, task2, task3, primeOrCompositeTask};
 
     // For each function in array, print a menu option
     for (int i = 0; i < sizeof(functions) / sizeof(functions[0]); i++) {

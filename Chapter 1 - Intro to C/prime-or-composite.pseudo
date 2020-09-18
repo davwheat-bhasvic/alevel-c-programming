@@ -1,0 +1,56 @@
+function IsPrime(int num) {
+    if (num % 2 == 0) return false;
+
+    for (int i = 3; i < num; i += 2) {
+        if (i >= num) continue;
+
+        if (num % i == 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+OUTPUT "1. Enter a number to check if it's prime or composite";
+OUTPUT "2. Enter a number that is prime or composite based on what the computer chooses";
+OUTPUT "\nChoose an option: ";
+
+option = -1;
+
+while (option < 1 OR option > 2) {
+    option = INPUT();
+}
+
+if (option == 1) {
+    OUTPUT "Enter an integer: ";
+    num = INPUT();
+
+    if (IsPrime(num)) OUTPUT "P"
+    else OUTPUT "C"
+}
+else if (option == 2) {
+    opt = rand(0, 1);
+
+    if (opt == 0) OUTPUT "P"
+    else OUTPUT "C"
+
+    OUTPUT "Enter a number: ";
+    num = INPUT();
+
+    if (IsPrime(num)) {
+        if (opt == 0) {
+            OUTPUT "Yay, that's a prime number!";
+        } else {
+            OUTPUT "Uh oh, that wasn't a prime number.";
+        }
+    } else {
+        if (opt == 0) {
+            OUTPUT "Uh oh, that wasn't a composite number.";
+        } else {
+            OUTPUT "Yay, that's a composite number!";
+        }
+    }
+}
+
+
