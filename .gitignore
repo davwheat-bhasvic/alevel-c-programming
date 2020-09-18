@@ -55,7 +55,11 @@ Mkfile.old
 dkms.conf
 
 # IDEA
-.idea
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/tasks.xml
+.idea/shelf
 
 # CMake
-cmake-build-debug
+
+cmake-build-debug/
