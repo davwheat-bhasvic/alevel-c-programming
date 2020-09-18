@@ -1,3 +1,0 @@
-N:/alevel-programming/Chapter 1 - Intro to C/cmake-build-debug/CMakeFiles/Chapter_1___Intro_to_C.dir
-N:/alevel-programming/Chapter 1 - Intro to C/cmake-build-debug/CMakeFiles/edit_cache.dir
-N:/alevel-programming/Chapter 1 - Intro to C/cmake-build-debug/CMakeFiles/rebuild_cache.dir
