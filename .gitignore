@@ -1,5 +1,5 @@
 # Office temp files
-$$*.~*
+~$$*.~*
 
 # Prerequisites
 *.d
