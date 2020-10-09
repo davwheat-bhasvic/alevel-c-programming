@@ -12,10 +12,25 @@ int main() {
         numbers[i] = input;
     }
 
-    int get = 0;
+    float average = 0;
+    int low = numbers[0], high = numbers[0], higherCount = 0;
 
-    printf("Enter the index to retrieve: ");
-    scanf("%i", &get);
+    for (int i = 0; i < 10; i++) {
+        average += numbers[i];
+    }
 
-    printf("Index %d has value %d", get, numbers[get]);
+    // calculate average
+    average /= 10;
+
+    for (int i = 0; i < 10; i++) {
+        if (numbers[i] > average) higherCount++;
+
+        if (numbers[i] > high) high = numbers[i];
+        else if (numbers[i] < low) low = numbers[i];
+    }
+
+    printf("\nAverage: %f", average);
+    printf("\nHighest: %d", high);
+    printf("\nLowest: %d", low);
+    printf("\nHigher than avg: %d", higherCount);
 }
