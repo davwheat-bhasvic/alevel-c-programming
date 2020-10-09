@@ -27,10 +27,10 @@ int main() {
 
         guessCount++;
     }
+
     if (guessCount > 5) {
         printf("You lose!");
     } else {
         printf("You win!");
     }
-
 }
