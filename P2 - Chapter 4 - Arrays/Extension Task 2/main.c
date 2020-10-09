@@ -24,7 +24,7 @@ int main() {
         output[missingIndex] = '?';
 
         printf("%s", output);
-        printf("\nWhat's the full word? ");
+        printf("\nWhat's the full word?");
 
         char input[MAX_STRING_LENGTH];
         fgets(input, MAX_STRING_LENGTH, stdin);
@@ -39,6 +39,8 @@ int main() {
             printf("Incorrect. The word was %s\n\n", words[i]);
         }
     }
+
+    printf("Score: %d", score);
 
     return 0;
 }
