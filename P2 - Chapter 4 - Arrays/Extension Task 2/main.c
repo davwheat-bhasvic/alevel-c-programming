@@ -31,7 +31,7 @@ int main() {
     // Init randomiser, should only be called once.
     srand(time(NULL));
 
-    char words[MAX_STRING_LENGTH][25] = {"elephant", "barbaric", "sanitise", "virus", "infectious"};
+    char words[10][MAX_STRING_LENGTH] = {"elephant", "barbaric", "sanitise", "virus", "infectious", "coronavirus", "computer", "ethernet", "boolean", "keyboard"};
     int score = 0;
 
     for (int i = 0; i < 10; i++) {
