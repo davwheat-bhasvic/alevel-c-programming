@@ -8,7 +8,6 @@ void push();
 void pop();
 
 int main() {
-
   int choice = 0;
   do {
     printf("Do you want to add(1), remove(2) or quit(3)?: ");

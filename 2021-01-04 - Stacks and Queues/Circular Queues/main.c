@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 void enqueue();
 
@@ -8,8 +8,8 @@ void dequeue();
 void printQ();
 
 int Q[10] = {-1}, front = 0, rear = 0, inQ = 0;
-//line 11 works out the size of my array by dividing the array
-//reserved memory by the data type it finds in the first index
+// line 11 works out the size of my array by dividing the array
+// reserved memory by the data type it finds in the first index
 int qSize = sizeof(Q) / sizeof(Q[0]);
 
 int main() {
@@ -73,9 +73,3 @@ void dequeue() {
 
   printQ();
 }
-
-
-
-
-
-
